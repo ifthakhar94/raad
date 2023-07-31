@@ -19,8 +19,10 @@
 
 
 0.2 Structure
-    -  Common Styles
-	-  Header
+    - Common Styles
+    - Home Page
+	    - Header Styles
+       
 	-  Sections Titles 
 	-  Crumbs
 	-  Main Navigation
@@ -102,4 +104,85 @@ a.md-btn {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----- Header Styles  ----- */
+.header-top {
+  padding: 36px 0px;
+}
+.header-nav ul > li {
+  margin-left: 20px;
+}
+.header-nav ul ul li,
+.header-nav ul li:first-child {
+  margin-left: 0px;
+}
+.header-nav ul li a {
+  color: var(--gray);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 16px !important;
+}
+
+.header-nav .selected {
+  background: var(--primary-color);
+  border-radius: 20px;
+  padding: 4px 16px;
+  color: var(--white);
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons ul li {
+  margin-left: 10px;
+}
+
+.social-icons ul li:first-child {
+  margin-left: 0;
+}
+
+.social-icons ul li a {
+  color: var(--white);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-and-drawer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-and-drawer ul li {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.search-and-drawer ul li span {
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
 }
