@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* ============================== 
+	- Template Name: Raad - HTML Template
+	- Autor: 
+	- Email: 
+	- Name File: style.css
+	- Version 1.0 - Update on 31/07/2023
+	- Website: 
+	- Copyright: (C) 2023
+================================= */
+
+/* ---------------------- 
+	Stylesheet Guide
+-------------------------
+
+01. Import Files
+	-  Google Fonts - Poppins
+
+
+0.2 Structure
+    -  Common Styles
+	-  Header
+	-  Sections Titles 
+	-  Crumbs
+	-  Main Navigation
+	-  Galley Carousel
+	-  filtrers
+	-  Portfolio
+	-  Footer
+	-  Social
+	-  Contact
+	-  Comments
+	-  Tables Princing	
+	-  Commnets		
+	-  Tables Princing Promotions	
+	-  Blog	
+
+*/
+
+/* ----- 01. Import Files ----- */
+/* -----  Google Fonts - Poppins  ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+
+/* ----- 0.2 Structure  ----- */
+/* ----- Common Styles ----- */
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: linear-gradient(90deg, #00c2ff 0%, #0079d1 100%);
+  --white: #fff;
+  --gray: #8a8a8a;
+  --light-gray: #d6d6d6;
+  --black: #424242;
+}
+a.sm-btn {
+  background: var(--primary-color);
+  display: flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+}
+a.md-btn {
+  background: var(--primary-color);
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.sm-headline {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+.md-headline {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+.lg-headline {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+}
+.pera {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
