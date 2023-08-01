@@ -69,6 +69,7 @@ a.sm-btn {
   font-weight: 400;
   color: var(--white);
 }
+
 a.md-btn {
   background: var(--primary-color);
   display: flex;
@@ -127,7 +128,8 @@ a {
 .header-nav ul li:first-child {
   margin-left: 0px;
 }
-.header-nav ul li a {
+.header-nav ul li a,
+.offcanvas-nav ul li a {
   color: var(--gray);
   font-family: "Poppins";
   font-size: 14px;
@@ -166,7 +168,7 @@ a {
   justify-content: center;
 }
 
-.search-and-drawer ul {
+.search-and-drawer > ul {
   display: flex;
   justify-content: flex-end;
 }
@@ -185,4 +187,46 @@ a {
   justify-content: center;
   align-items: center;
   color: var(--white);
+}
+
+.search-and-drawer ul li .modal-title {
+  color: var(--black) !important;
+}
+
+.search-and-drawer .modal-close-btn {
+  background: var(--primary-color);
+  display: flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  border: none;
+}
+
+.search-input-custom-style {
+  border-radius: 20px;
+}
+
+.search-submit-btn {
+  background: var(--primary-color);
+  display: flex;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  border: none;
+}
+
+.search-and-drawer .modal-body {
+  padding: 50px 20px;
+}
+
+.search-and-drawer .modal-content {
+  margin-top: 20%;
 }

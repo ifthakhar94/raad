@@ -125,10 +125,204 @@
             <div class="search-and-drawer">
               <ul>
                 <li>
-                  <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <!-- Search Modal  -->
+                  <span data-bs-toggle="modal" data-bs-target="#searchModal"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="searchModal"
+                    tabindex="-1"
+                    aria-labelledby="searchModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="searchModalLabel">
+                            Press ESC to close
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="row align-items-center">
+                            <div class="col-12 col-md-8">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search"
+                                class="search-submit-btn"
+                              />
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                              <button type="submit" class="search-submit-btn">
+                                Submit
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="modal-close-btn"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <span><i class="fa-solid fa-bars"></i></span>
+                  <!-- offcanvas Menu  -->
+                  <span
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    ><i class="fa-solid fa-bars"></i
+                  ></span>
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasRight"
+                  >
+                    <div class="offcanvas-header">
+                      <a href="index.html" class="offcanvas-logo">
+                        <img src="assets/img/logo.png" alt="offcanvas logo" />
+                      </a>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <!-- Offcanvas Menu  -->
+                      <div class="offcanvas-nav">
+                        <ul
+                          class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                        >
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <hr class="dropdown-divider" />
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <!-- <nav class="navbar navbar-expand">
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link selected" href="index.html"
+                                  >Home</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Fashion</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Lifestyle</a>
+                              </li>
+                              <li class="nav-item">
+                                <div class="dropdown">
+                                  <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown"
+                                    >Pages
+                                  </a>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuButton1"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav> -->
+                      </div>
+                      <!-- offcanvas social icons  -->
+                      <div class="social-icons">
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="fa-brands fa-pinterest-p"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
