@@ -21,7 +21,9 @@
 0.2 Structure
     - Common Styles
     - Home Page
-	    - Header Styles
+	    - Header Top Styles
+      - News Ticker Styles
+      - Hero News Styles 
        
 	-  Sections Titles 
 	-  Crumbs
@@ -117,9 +119,10 @@ a {
   text-decoration: none;
 }
 
-/* ----- Header Styles  ----- */
+/* ----- Header Top Styles  ----- */
 .header-top {
   padding: 36px 0px;
+  border-bottom: 2px solid var(--light-gray);
 }
 .header-nav ul > li {
   margin-left: 20px;
@@ -137,7 +140,8 @@ a {
   padding: 4px 16px !important;
 }
 
-.header-nav .selected {
+.header-nav .selected,
+.offcanvas-nav .selected {
   background: var(--primary-color);
   border-radius: 20px;
   padding: 4px 16px;
@@ -229,4 +233,124 @@ a {
 
 .search-and-drawer .modal-content {
   margin-top: 20%;
+}
+
+/* ----- News Ticker Styles  ----- */
+.news-ticker {
+  padding: 32px 0;
+}
+
+.trending-news-btn {
+  background: var(--primary-color);
+  display: inline-flex;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  color: var(--white);
+}
+
+.news-ticker span {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ----- Hero News Styles  ----- */
+.hero-news {
+  margin-top: 32px;
+}
+.hero-news-cards > div {
+  float: left;
+  border-radius: 8px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.hero-news-card-content h2 {
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.news-card-meta {
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+.news-card-meta span {
+  padding: 0 10px;
+}
+.hero-news-cards > div:first-child {
+  width: 48%;
+  height: 461px;
+  background-color: var(--light-gray);
+  background-image: url("assets/img/hero-news-1.png");
+  position: relative;
+}
+
+.hero-news-cards > div:first-child .hero-news-card-content {
+  position: absolute;
+  bottom: 38px;
+  left: 38px;
+  right: 38px;
+}
+.hero-news-cards > div:nth-child(2) {
+  width: 48%;
+  height: 240px;
+  background: var(--gray);
+  margin-left: 30px;
+  background-image: url("assets/img/hero-news-2.png");
+  position: relative;
+}
+
+.hero-news-cards > div:nth-child(2) .hero-news-card-content {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  right: 30px;
+}
+
+.hero-news-cards > div:nth-child(3) {
+  width: 23%;
+  height: 190px;
+  background: var(--gray);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-image: url("assets/img/hero-news-3.png");
+  position: relative;
+}
+
+.hero-news-cards > div:nth-child(3) .hero-news-card-content,
+.hero-news-cards > div:nth-child(4) .hero-news-card-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.hero-news-cards > div:nth-child(3) .hero-news-card-content h2,
+.hero-news-cards > div:nth-child(4) .hero-news-card-content h2 {
+  font-size: 16px;
+}
+.hero-news-cards > div:nth-child(4) {
+  width: 23%;
+  height: 190px;
+  background: var(--gray);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-image: url("assets/img/hero-news-4.png");
+  position: relative;
+}
+
+.news-card-category {
+  display: inline-flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--primary-color);
+  margin-bottom: 0;
+  color: var(--white);
 }
