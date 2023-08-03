@@ -24,21 +24,10 @@
 	    - Header Top Styles
       - News Ticker Styles
       - Hero News Styles 
-       
-	-  Sections Titles 
-	-  Crumbs
-	-  Main Navigation
-	-  Galley Carousel
-	-  filtrers
-	-  Portfolio
-	-  Footer
-	-  Social
-	-  Contact
-	-  Comments
-	-  Tables Princing	
-	-  Commnets		
-	-  Tables Princing Promotions	
-	-  Blog	
+      - Editor's Pick Styles
+      - Sponsored Adds Styles
+      - Tranding News Styles
+
 
 */
 
@@ -59,6 +48,7 @@ body {
   --gray: #8a8a8a;
   --light-gray: #d6d6d6;
   --black: #424242;
+  --capri: #00c2ff;
 }
 a.sm-btn {
   background: var(--primary-color);
@@ -117,6 +107,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }
 
 /* ----- Header Top Styles  ----- */
@@ -259,6 +253,7 @@ a {
 /* ----- Hero News Styles  ----- */
 .hero-news {
   margin-top: 32px;
+  margin-bottom: 80px;
 }
 .hero-news-cards > div {
   float: left;
@@ -283,12 +278,22 @@ a {
 .news-card-meta span {
   padding: 0 10px;
 }
+
 .hero-news-cards > div:first-child {
   width: 48%;
   height: 461px;
   background-color: var(--light-gray);
   background-image: url("assets/img/hero-news-1.png");
   position: relative;
+}
+
+.hero-news-card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.3;
 }
 
 .hero-news-cards > div:first-child .hero-news-card-content {
@@ -298,7 +303,7 @@ a {
   right: 38px;
 }
 .hero-news-cards > div:nth-child(2) {
-  width: 48%;
+  width: 48.4%;
   height: 240px;
   background: var(--gray);
   margin-left: 30px;
@@ -353,4 +358,175 @@ a {
   background: var(--primary-color);
   margin-bottom: 0;
   color: var(--white);
+}
+
+/* Editor's Pick Styles  */
+
+h2.section-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+h2.section-title:after {
+  content: "";
+  background: var(--primary-color);
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.editors-pick-thumb {
+  min-width: 332px;
+  min-height: 332px;
+  border-radius: 8px;
+  position: relative;
+  background: url("assets/img/eidtors pick thumb 1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.news-thumb-category {
+  display: inline-flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--primary-color);
+  margin-bottom: 0;
+  color: var(--white);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.editors-author-meta,
+.tranding-author-meta {
+  margin: 20px 0px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.editors-author-meta p,
+.tranding-author-meta p {
+  color: var(--black);
+  margin-left: 20px;
+}
+
+.editors-author-meta img,
+.tranding-author-meta img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+h2.editors-card-title,
+.tranding-card-title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+h2.editors-card-title:hover,
+.tranding-card-title:hover {
+  color: var(--capri);
+}
+
+.editors-card-desc,
+.tranding-card-desc {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-wrapper {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+
+.single-editors-news-card .news-card-meta {
+  color: var(--gray);
+}
+
+.single-editors-news-card {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--gray);
+}
+.single-editors-news-card:first-child {
+  margin-top: 0px;
+}
+.single-editors-news-card:last-child {
+  border-bottom: none;
+}
+.single-editors-news-card img {
+  width: 98px;
+  height: 88px;
+  border-radius: 8px;
+}
+
+.single-editors-news-card-content {
+  margin-left: 12px;
+}
+
+.single-editors-news-card-content h6 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.single-editors-news-card-content h6:hover {
+  color: var(--capri);
+}
+
+/* Sponsored Adds Styles  */
+.sponsored-adds p {
+  color: var(--black);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sponsored-adds-container {
+  width: 100%;
+  height: 120px;
+  background-color: var(--black);
+  background: url("assets/img/sponsored-add.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* Tranding News Styles  */
+
+.tranding-news-thumb {
+  min-width: 332px;
+  min-height: 332px;
+  border-radius: 8px;
+  position: relative;
+  background: url("assets/img/trandingThumb1.png");
+  background-size: cover;
+  background-position: center;
+}
+.tranding-news-thumb2 {
+  background: url("assets/img/trandingThumb2.png");
+  background-size: cover;
+  background-position: center;
+}
+.tranding-news-left-section {
 }
