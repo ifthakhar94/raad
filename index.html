@@ -163,7 +163,6 @@
                                 type="text"
                                 class="form-control"
                                 placeholder="Search"
-                                class="search-submit-btn"
                               />
                             </div>
 
@@ -734,7 +733,7 @@
                         Sed dignissim, metus nec fringilla accumsan, risus sem
                         sollicitudin lacus
                       </p>
-                      <div class="latest-posts-social-share">
+                      <ul class="latest-posts-social-share">
                         <li>
                           <img src="assets/img/share.png" alt="share icon" />
                         </li>
@@ -754,7 +753,7 @@
                             <i class="fa-brands fa-linkedin-in"></i
                           ></a>
                         </li>
-                      </div>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -784,7 +783,7 @@
                         Sed dignissim, metus nec fringilla accumsan, risus sem
                         sollicitudin lacus
                       </p>
-                      <div class="latest-posts-social-share">
+                      <ul class="latest-posts-social-share">
                         <li>
                           <img src="assets/img/share.png" alt="share icon" />
                         </li>
@@ -804,7 +803,7 @@
                             <i class="fa-brands fa-linkedin-in"></i
                           ></a>
                         </li>
-                      </div>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -834,7 +833,7 @@
                         Sed dignissim, metus nec fringilla accumsan, risus sem
                         sollicitudin lacus
                       </p>
-                      <div class="latest-posts-social-share">
+                      <ul class="latest-posts-social-share">
                         <li>
                           <img src="assets/img/share.png" alt="share icon" />
                         </li>
@@ -854,7 +853,7 @@
                             <i class="fa-brands fa-linkedin-in"></i
                           ></a>
                         </li>
-                      </div>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -884,7 +883,7 @@
                         Sed dignissim, metus nec fringilla accumsan, risus sem
                         sollicitudin lacus
                       </p>
-                      <div class="latest-posts-social-share">
+                      <ul class="latest-posts-social-share">
                         <li>
                           <img src="assets/img/share.png" alt="share icon" />
                         </li>
@@ -904,7 +903,7 @@
                             <i class="fa-brands fa-linkedin-in"></i
                           ></a>
                         </li>
-                      </div>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -913,7 +912,187 @@
             <!-- Latest Posts Area End -->
           </div>
           <!-- Sidebar  -->
-          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <!-- Popular & Recent Posts Tab  -->
+            <div class="sidebar-wrapper">
+              <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="popular-posts-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#popular-posts"
+                    type="button"
+                    role="tab"
+                    aria-controls="popular-posts"
+                    aria-selected="true"
+                  >
+                    Popular
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="recent-posts-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#recent-posts"
+                    type="button"
+                    role="tab"
+                    aria-controls="recent-posts"
+                    aria-selected="false"
+                  >
+                    Recent
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="popular-posts"
+                  role="tabpanel"
+                  aria-labelledby="popular-posts-tab"
+                >
+                  <div class="tab-popular-posts">
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb1.png"
+                        alt="sidebarPostThumb1"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb2.png"
+                        alt="sidebarPostThumb2"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb3.png"
+                        alt="sidebarPostThumb3"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb4.png"
+                        alt="sidebarPostThumb4"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="recent-posts"
+                  role="tabpanel"
+                  aria-labelledby="recent-posts-tab"
+                >
+                  <div class="tab-popular-posts">
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb4.png"
+                        alt="sidebarPostThumb4"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb2.png"
+                        alt="sidebarPostThumb2"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb1.png"
+                        alt="sidebarPostThumb1"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="tab-single-popular-post">
+                      <img
+                        src="assets/img/sidebarPostThumb3.png"
+                        alt="sidebarPostThumb3"
+                        class="tab-popular-post-thumb"
+                      />
+                      <div class="tab-popular-post-content">
+                        <h4>
+                          10 simple steps to turn the future into success.
+                        </h4>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

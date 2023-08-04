@@ -31,6 +31,7 @@
       - Tranding News Styles
       - Inspiration News Styles 
       - Latest Posts Styles 
+      - Popular & Recent Posts Sidebar Styles
 
 
 */
@@ -119,6 +120,19 @@ ul {
 
 a {
   text-decoration: none;
+}
+.sidebar-common-btn {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
 }
 
 .mb-80 {
@@ -660,4 +674,92 @@ h2.editors-card-title:hover,
 
 .single-latest-post:last-child {
   margin-bottom: 0px;
+}
+
+/* Popular & Recent Posts Sidebar Styles  */
+.sidebar-wrapper {
+  padding: 40px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-common-btn {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.sidebar-wrapper .nav-pills .nav-link.active,
+.sidebar-wrapper .nav-pills .show > .nav-link {
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.sidebar-wrapper .nav-link {
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--light-gray);
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.sidebar-wrapper .nav {
+  justify-content: center;
+  gap: 30px;
+}
+
+.tab-single-popular-post {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--gray);
+  margin-top: 32px;
+}
+
+.tab-single-popular-post:last-child {
+  border-bottom: none;
+}
+
+.tab-single-popular-post img {
+  width: 98px;
+  height: 88px;
+  border-radius: 8px;
+}
+
+.tab-popular-post-content h4 {
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tab-popular-post-content h4:hover {
+  color: var(--capri);
+}
+
+.tab-popular-post-content .news-card-meta {
+  color: var(--gray);
 }
