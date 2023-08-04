@@ -28,8 +28,6 @@
       src="https://kit.fontawesome.com/2b1e055860.js"
       crossorigin="anonymous"
     ></script>
-    <!-- BootStrap CSS  -->
-    <link rel="stylesheet" href="assets/css/bootstrap5.3.1.min.css" />
 
     <!-- Theme CSS -->
     <link type="text/css" media="screen" rel="stylesheet" href="style.css" />
@@ -40,6 +38,14 @@
       rel="stylesheet"
       href="css/theme-responsive.css"
     />
+    <!-- Facebook SDK -->
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"
+      nonce="YOUR_NONCE_VALUE"
+    ></script>
   </head>
   <body>
     <!-- Header Top Area Start  -->
@@ -384,7 +390,7 @@
         <div class="row">
           <div class="col-md-8">
             <!-- Editor's Pick Section Start -->
-            <div class="editors-pick-wrapper mb-80">
+            <section class="editors-pick-wrapper mb-80">
               <h2 class="section-title">Editor’s Pick</h2>
 
               <div class="section-wrapper">
@@ -478,54 +484,240 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
             <!-- Editor's Pick Section End -->
 
             <!-- Sponsored Adds Area Start -->
-            <div class="sponsored-adds mb-80">
+            <section class="sponsored-adds mb-80">
               <p>- SPONSORED AD -</p>
               <div class="sponsored-adds-container"></div>
-            </div>
+            </section>
             <!-- Sponsored Adds Area End -->
 
             <!-- Trending News Area Start -->
-            <div class="trending-news mb-80">
+            <section class="trending-news mb-80">
               <h2 class="section-title">Trending</h2>
               <div class="section-wrapper">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="tranding-news-left-section">
-                      <div class="tranding-news-thumb">
-                        <p class="news-thumb-category">Lifestyle</p>
-                      </div>
+                      <div class="tranding-left-big-humb">
+                        <div class="tranding-news-thumb">
+                          <p class="news-thumb-category">Lifestyle</p>
+                        </div>
 
-                      <div class="tranding-author-meta">
-                        <img
-                          src="assets/img/author-prifile-img.png"
-                          alt="author-prifile-img"
-                        />
-                        <p class="news-card-meta">
-                          John Doe <span>| </span> 29 Aug 2023
+                        <div class="tranding-author-meta">
+                          <img
+                            src="assets/img/author-prifile-img.png"
+                            alt="author-prifile-img"
+                          />
+                          <p class="news-card-meta">
+                            John Doe <span>| </span> 29 Aug 2023
+                          </p>
+                        </div>
+                        <h2 class="tranding-card-title">
+                          10 simple steps to turn the future into success.
+                        </h2>
+                        <p class="tranding-card-desc">
+                          Korem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Etiam eu turpis molestie, dictum est a, mattis
+                          tellus. Sed dignissim, metus nec fringilla accumsan,
+                          risus sem sollicitudin lacus
                         </p>
                       </div>
-                      <h2 class="tranding-card-title">
-                        10 simple steps to turn the future into success.
-                      </h2>
-                      <p class="tranding-card-desc">
-                        Korem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Etiam eu turpis molestie, dictum est a, mattis tellus.
-                        Sed dignissim, metus nec fringilla accumsan, risus sem
-                        sollicitudin lacus
-                      </p>
+                      <div class="tranding-left-small-thumb">
+                        <div class="single-editors-news-card">
+                          <img
+                            src="assets/img/trandingThumb3.png"
+                            alt="trandingThumb3"
+                          />
+                          <div class="single-editors-news-card-content">
+                            <h6>
+                              10 simple steps to turn the future into success.
+                            </h6>
+                            <p class="news-card-meta">
+                              John Doe <span>| </span> 29 Aug 2023
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="single-editors-news-card">
+                          <img
+                            src="assets/img/trandingThumb4.png"
+                            alt="trandingThumb4"
+                          />
+                          <div class="single-editors-news-card-content">
+                            <h6>
+                              10 simple steps to turn the future into success.
+                            </h6>
+                            <p class="news-card-meta">
+                              John Doe <span>| </span> 29 Aug 2023
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="single-editors-news-card">
+                          <img
+                            src="assets/img/trandingThumb5.png"
+                            alt="trandingThumb5"
+                          />
+                          <div class="single-editors-news-card-content">
+                            <h6>
+                              10 simple steps to turn the future into success.
+                            </h6>
+                            <p class="news-card-meta">
+                              John Doe <span>| </span> 29 Aug 2023
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="col-md-6">
-                    <div class="tranding-news-left-section">
-                      <div class="tranding-news-thumb tranding-news-thumb2">
-                        <p class="news-thumb-category">Lifestyle</p>
-                      </div>
+                    <div class="tranding-news-right-section">
+                      <div class="tranding-right-big-thumb">
+                        <div class="tranding-news-thumb tranding-news-thumb2">
+                          <p class="news-thumb-category">Lifestyle</p>
+                        </div>
 
+                        <div class="tranding-author-meta">
+                          <img
+                            src="assets/img/author-prifile-img.png"
+                            alt="author-prifile-img"
+                          />
+                          <p class="news-card-meta">
+                            John Doe <span>| </span> 29 Aug 2023
+                          </p>
+                        </div>
+                        <h2 class="tranding-card-title">
+                          10 simple steps to turn the future into success.
+                        </h2>
+                        <p class="tranding-card-desc">
+                          Korem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Etiam eu turpis molestie, dictum est a, mattis
+                          tellus. Sed dignissim, metus nec fringilla accumsan,
+                          risus sem sollicitudin lacus
+                        </p>
+                      </div>
+                      <div class="tranding-right-small-thumb">
+                        <div class="single-editors-news-card">
+                          <img
+                            src="assets/img/trandingThumb6.png"
+                            alt="trandingThumb6"
+                          />
+                          <div class="single-editors-news-card-content">
+                            <h6>
+                              10 simple steps to turn the future into success.
+                            </h6>
+                            <p class="news-card-meta">
+                              John Doe <span>| </span> 29 Aug 2023
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="single-editors-news-card">
+                          <img
+                            src="assets/img/trandingThumb7.png"
+                            alt="trandingThumb7"
+                          />
+                          <div class="single-editors-news-card-content">
+                            <h6>
+                              10 simple steps to turn the future into success.
+                            </h6>
+                            <p class="news-card-meta">
+                              John Doe <span>| </span> 29 Aug 2023
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="single-editors-news-card">
+                          <img
+                            src="assets/img/trandingThumb8.png"
+                            alt="trandingThumb8"
+                          />
+                          <div class="single-editors-news-card-content">
+                            <h6>
+                              10 simple steps to turn the future into success.
+                            </h6>
+                            <p class="news-card-meta">
+                              John Doe <span>| </span> 29 Aug 2023
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Trending News Area End -->
+
+            <!-- Inspiration News Area Start -->
+            <section class="inspiration mb-80">
+              <h2 class="section-title">Inspiration</h2>
+              <div class="section-wrapper">
+                <div class="owl-carousel">
+                  <div class="single-inspiration-slide">
+                    <div class="inspiration-card">
+                      <div class="inspiration-card-content">
+                        <p class="inspiration-thumb-category">Lifestyle</p>
+                        <h6>
+                          10 simple steps to turn the future into success.
+                        </h6>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="single-inspiration-slide">
+                    <div class="inspiration-card2">
+                      <div class="inspiration-card-content">
+                        <p class="inspiration-thumb-category">Lifestyle</p>
+                        <h6>
+                          10 simple steps to turn the future into success.
+                        </h6>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="single-inspiration-slide">
+                    <div class="inspiration-card">
+                      <div class="inspiration-card-content">
+                        <p class="inspiration-thumb-category">Lifestyle</p>
+                        <h6>
+                          10 simple steps to turn the future into success.
+                        </h6>
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Inspiration News Area End -->
+
+            <!-- Latest Posts Area Start -->
+            <section class="latest-posts mb-80">
+              <h2 class="section-title">Latest Posts</h2>
+              <div class="section-wrapper">
+                <div class="row single-latest-post">
+                  <div class="col-md-6">
+                    <img
+                      src="assets/img/latestPosts1.png"
+                      class="latest-post-thumb"
+                      alt="latest-post-thumb"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="latest-post-content">
                       <div class="tranding-author-meta">
                         <img
                           src="assets/img/author-prifile-img.png"
@@ -535,21 +727,190 @@
                           John Doe <span>| </span> 29 Aug 2023
                         </p>
                       </div>
-                      <h2 class="tranding-card-title">
-                        10 simple steps to turn the future into success.
-                      </h2>
-                      <p class="tranding-card-desc">
+                      <h4>10 simple steps to turn the future into success.</h4>
+                      <p>
                         Korem ipsum dolor sit amet, consectetur adipiscing elit.
                         Etiam eu turpis molestie, dictum est a, mattis tellus.
                         Sed dignissim, metus nec fringilla accumsan, risus sem
                         sollicitudin lacus
                       </p>
+                      <div class="latest-posts-social-share">
+                        <li>
+                          <img src="assets/img/share.png" alt="share icon" />
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row single-latest-post">
+                  <div class="col-md-6">
+                    <img
+                      src="assets/img/latestPosts2.png"
+                      class="latest-post-thumb"
+                      alt="latest-post-thumb"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="latest-post-content">
+                      <div class="tranding-author-meta">
+                        <img
+                          src="assets/img/author-prifile-img.png"
+                          alt="author-prifile-img"
+                        />
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                      <h4>10 simple steps to turn the future into success.</h4>
+                      <p>
+                        Korem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam eu turpis molestie, dictum est a, mattis tellus.
+                        Sed dignissim, metus nec fringilla accumsan, risus sem
+                        sollicitudin lacus
+                      </p>
+                      <div class="latest-posts-social-share">
+                        <li>
+                          <img src="assets/img/share.png" alt="share icon" />
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row single-latest-post">
+                  <div class="col-md-6">
+                    <img
+                      src="assets/img/latestPosts3.png"
+                      class="latest-post-thumb"
+                      alt="latest-post-thumb"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="latest-post-content">
+                      <div class="tranding-author-meta">
+                        <img
+                          src="assets/img/author-prifile-img.png"
+                          alt="author-prifile-img"
+                        />
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                      <h4>10 simple steps to turn the future into success.</h4>
+                      <p>
+                        Korem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam eu turpis molestie, dictum est a, mattis tellus.
+                        Sed dignissim, metus nec fringilla accumsan, risus sem
+                        sollicitudin lacus
+                      </p>
+                      <div class="latest-posts-social-share">
+                        <li>
+                          <img src="assets/img/share.png" alt="share icon" />
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row single-latest-post">
+                  <div class="col-md-6">
+                    <img
+                      src="assets/img/latestPosts4.png"
+                      class="latest-post-thumb"
+                      alt="latest-post-thumb"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="latest-post-content">
+                      <div class="tranding-author-meta">
+                        <img
+                          src="assets/img/author-prifile-img.png"
+                          alt="author-prifile-img"
+                        />
+                        <p class="news-card-meta">
+                          John Doe <span>| </span> 29 Aug 2023
+                        </p>
+                      </div>
+                      <h4>10 simple steps to turn the future into success.</h4>
+                      <p>
+                        Korem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam eu turpis molestie, dictum est a, mattis tellus.
+                        Sed dignissim, metus nec fringilla accumsan, risus sem
+                        sollicitudin lacus
+                      </p>
+                      <div class="latest-posts-social-share">
+                        <li>
+                          <img src="assets/img/share.png" alt="share icon" />
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Trending News Area End -->
+            </section>
+            <!-- Latest Posts Area End -->
           </div>
           <!-- Sidebar  -->
           <div class="col-md-4"></div>
@@ -557,7 +918,16 @@
       </div>
     </section>
 
+    <!-- jQuery 3.7.0  -->
+    <script src="assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <!-- Owl Carousel JS  -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
     <!-- BootStrap JS  -->
     <script src="assets/js/bootstrap@5.3.1bundle.min.js"></script>
+
+    <!-- Custom JS  -->
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
