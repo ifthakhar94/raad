@@ -32,6 +32,13 @@
       - Inspiration News Styles 
       - Latest Posts Styles 
       - Popular & Recent Posts Sidebar Styles
+      - About Widget Style 
+      - Popular Post Widget Style 
+      - Explore Topics Widget Style
+      - Sidebar Add Style
+      - Sidebar Tag Cloud Style
+      - Instagram Feed Style 
+      - Footer Style
 
 
 */
@@ -75,7 +82,7 @@ a.sm-btn {
   color: var(--white);
 }
 
-a.md-btn {
+.md-btn {
   background: var(--primary-color);
   display: flex;
   padding: 8px 24px;
@@ -120,19 +127,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-.sidebar-common-btn {
-  display: flex;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  background: var(--primary-color);
-  border: none;
-  color: var(--white);
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 600;
-  border-radius: 20px;
 }
 
 .mb-80 {
@@ -762,4 +756,171 @@ h2.editors-card-title:hover,
 
 .tab-popular-post-content .news-card-meta {
   color: var(--gray);
+}
+
+/* About Widget Style  */
+
+.about-widget p {
+  background: url("assets/img/map.png");
+  padding: 20px 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: var(--black);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-widget img {
+  margin: auto auto 20px auto;
+  display: block;
+}
+
+.about-widget .social-icons ul {
+  justify-content: center;
+}
+
+/* Popular Post Widget Style  */
+
+.custom-widget h3 {
+  width: 195px;
+  margin: 0 auto 40px auto;
+}
+
+/* Explore Topics Widget Style  */
+.explore-single-topic {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px;
+  align-items: center;
+  border-top: 1px solid var(--light-gray);
+  padding: 12px 0;
+}
+
+.explore-topic-name {
+  display: flex;
+}
+.explore-topic-name i {
+  color: var(--capri);
+  margin-top: 5px;
+}
+
+.explore-topic-name a {
+  margin-left: 20px;
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.explore-topic-name a:hover {
+  color: var(--capri);
+}
+
+p.topic-count {
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Sidebar Add Style  */
+.sidebar-sponsor-ad p {
+  color: var(--black);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.sidebar-sponsor-ad img {
+  width: 100%;
+  min-height: 360px;
+}
+
+/* Sidebar Tag Cloud Style  */
+.cloud-tags {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.cloud-tags a {
+  display: flex;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--light-gray);
+  background: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Instagram Feed Style  */
+
+.insta-posts {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+}
+
+.instagram-data {
+  position: relative;
+}
+
+.insta-posts img {
+  border-radius: 8px;
+}
+
+.instagram-data a {
+  position: absolute;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--primary-color);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer Style  */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+p.copyright-text {
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  border: 1px solid var(--light-gray);
+  background: var(--white);
+  color: var(--black);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
 }

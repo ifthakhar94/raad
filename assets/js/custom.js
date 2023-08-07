@@ -8,4 +8,11 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     margin: 30,
   });
+
+  // Get the current year
+
+  const currentYear = new Date().getFullYear();
+
+  // Display the current year using jQuery
+  $("#currentYear").text(currentYear);
 });
